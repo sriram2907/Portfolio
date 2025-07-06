@@ -23,11 +23,18 @@ export default function App() {
           <a href="https://www.youtube.com/@Rams_650" target="_blank" rel="noopener noreferrer">
           <div className="grid-item item-2"></div>
           </a>
-          <div className="grid-item item-3"></div>
-          <div className="grid-item item-4"></div>
+
+          <a
+            href="https://open.spotify.com/playlist/7EgbZx4zbgQziswCgvVKT7?si=76135731ad0241a5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="grid-item item-3"
+          ></a>
+          
+          <div className="grid-item item-4">Spotify API</div>
 
           
-          <div className="grid-item item-5"></div>
+          <div className="grid-item item-5">MY PAGE</div>
           
           <a
             href="https://www.linkedin.com/in/sri-ram-92389425b"
@@ -37,7 +44,15 @@ export default function App() {
           ></a>
           
           <div className="grid-item item-7"></div>
-          <div className="grid-item item-8"> 
+
+          
+          <a
+            href="https://github.com/sriram2907"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="grid-item item-8"
+          >
+            <div className="grid-item item-8"> 
             <img
               src="/Images/Github2.png"
               alt="Github"
@@ -45,10 +60,20 @@ export default function App() {
               height={100}
               />
           </div>
-          <div className="grid-item item-9"></div>
+          </a>
+          
+          
+
+        <a href="mailto:sriramv1227@gmail.com">
+  <div className="grid-item item-9">
+
+  </div>
+</a>
+
+
           <div className="grid-item item-10"></div>
           <div className="grid-item item-11">
-          <BoredSuggestion />
+          <img src="/Images/Monkey.jpg" alt="Monkey" width={150} height={150} />
 
           </div>
           <div className="grid-item item-12"></div>

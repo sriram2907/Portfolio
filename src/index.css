@@ -130,7 +130,7 @@ body {
 }
 
 .item-2 {
-  background-image: url("/Images/youtube.png");
+  background-image: url("/Images/Youtube.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -180,7 +180,7 @@ body {
   grid-row: 2/3;
 }
 .item-9 {
-  background-image: url("/Images/Gmail.jpg");
+  background-image: url("/Images/Gmail.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -310,4 +310,5 @@ body {
   font-weight: 500;
   text-align: right;
 }
+
 

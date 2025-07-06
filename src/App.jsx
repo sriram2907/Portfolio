@@ -7,6 +7,8 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import BoredSuggestion from "./Components/Api";
+import Checkbox from "./Components/Light";
+
 export default function App() {
   return (
     <div className="app">
@@ -21,7 +23,8 @@ export default function App() {
           ></a>
 
           <a href="https://www.youtube.com/@Rams_650" target="_blank" rel="noopener noreferrer">
-          <div className="grid-item item-2"></div>
+          <div className="grid-item item-2">
+          </div>
           </a>
 
           <a
@@ -31,10 +34,26 @@ export default function App() {
             className="grid-item item-3"
           ></a>
           
-          <div className="grid-item item-4">Spotify API</div>
+         <div className="grid-item item-4">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="bg-video"
+  >
+    <source src="/images/Spotify api.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div className="content">
+    <h2>Item 4</h2>
+  </div>
+</div>
+
 
           
-          <div className="grid-item item-5">MY PAGE</div>
+          <div className="grid-item item-5"></div>
           
           <a
             href="https://www.linkedin.com/in/sri-ram-92389425b"
@@ -53,12 +72,7 @@ export default function App() {
             className="grid-item item-8"
           >
             <div className="grid-item item-8"> 
-            <img
-              src="/images/Github2.png"
-              alt="Github"
-              width={100}
-              height={100}
-              />
+          
           </div>
           </a>
           
@@ -73,10 +87,13 @@ export default function App() {
 
           <div className="grid-item item-10"></div>
           <div className="grid-item item-11">
-          <img src="/images/Monkey.jpg" alt="Monkey" width={150} height={150} />
-
           </div>
-          <div className="grid-item item-12"></div>
+
+
+          <div className="grid-item item-12">
+            <Checkbox />
+            
+          </div>
 
           <div className="grid-item item-13">
             <div className="social-icons">

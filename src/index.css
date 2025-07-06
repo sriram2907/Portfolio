@@ -121,7 +121,7 @@ body {
 
 .item-1 {
   position: relative;
-  background-image: url("/Images/CV.png");
+  background-image: url("/images/CV.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,28 +130,28 @@ body {
 }
 
 .item-2 {
-  background-image: url("/Images/Youtube.png");
+  background-image: url("/images/Youtube.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   grid-column: 3/4;
 }
 .item-3 {
-  background-image: url("/Images/Spotify.jpg");
+  background-image: url("/images/Spotify.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-column: 4/5;
 }
 .item-4 {
-  background-image: url("/Images/Apple.jpg");
+  background-image: url("/images/Apple.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   grid-column: 5/7;
 }
 .item-5 {
-  background-image: url("/Images/Mine.jpg");
+  background-image: url("/images/Mine.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,7 +159,7 @@ body {
   grid-row: 2/4;
 }
 .item-6 {
-  background-image: url("/Images/Linkdin.jpg");
+  background-image: url("/images/Linkdin.jpg");
   background-size: 250px;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ body {
   grid-row: 2/3;
 }
 .item-7 {
-  background-image: url("/Images/project.png");
+  background-image: url("/images/project.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -180,7 +180,7 @@ body {
   grid-row: 2/3;
 }
 .item-9 {
-  background-image: url("/Images/Gmail.png");
+  background-image: url("/images/Gmail.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body {
   grid-row: 3/4;
 }
 .item-10 {
-  background-image: url("/Images/skill.png");
+  background-image: url("/images/skill.png");
   background-size: cover ;
   background-position: center;
   background-repeat: no-repeat;
@@ -200,7 +200,7 @@ body {
   grid-row: 4/5;
 }
 .grid-12 {
-  background-image: url("/Images/Instagram.jpg");
+  background-image: url("/images/Instagram.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -208,7 +208,7 @@ body {
   grid-row: 4/5;
 }
 .item-13 {
-  background-image: url("/Images/Contact me.jpg");
+  background-image: url("/images/Contact me.jpg");
   background-size: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -268,7 +268,7 @@ body {
 }
 
 .item-14 {
-  background-image: url("/Images/Gallery.jpg");
+  background-image: url("/images/Gallery.jpg");
   background-size: cover;
   background-position: center;
   grid-column: 5/7;

@@ -54,7 +54,7 @@ export default function App() {
           >
             <div className="grid-item item-8"> 
             <img
-              src="/Images/Github2.png"
+              src="/images/Github2.png"
               alt="Github"
               width={100}
               height={100}
@@ -73,7 +73,7 @@ export default function App() {
 
           <div className="grid-item item-10"></div>
           <div className="grid-item item-11">
-          <img src="/Images/Monkey.jpg" alt="Monkey" width={150} height={150} />
+          <img src="/images/Monkey.jpg" alt="Monkey" width={150} height={150} />
 
           </div>
           <div className="grid-item item-12"></div>

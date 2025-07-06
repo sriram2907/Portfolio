@@ -176,7 +176,7 @@ body {
   grid-row: 2/3;
 }
 .item-7 {
-  background-image: url("/images/project.png");
+  background-image: url("/project.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

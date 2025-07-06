@@ -42,12 +42,11 @@ export default function App() {
     playsInline
     className="bg-video"
   >
-    <source src="/images/Spotify api.mp4" type="video/mp4" />
+    <source src="/images/spotify-api.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
   <div className="content">
-    <h2>Item 4</h2>
   </div>
 </div>
 

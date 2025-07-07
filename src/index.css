@@ -322,3 +322,59 @@ body {
 }
 
 
+@media screen and (max-width: 768px) {
+  body,
+  .main-container,
+  .animated-grid {
+    height: auto;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column grid on mobile */
+    grid-auto-rows: 170px;
+    gap: 15px;
+  }
+
+  .grid-item {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  .item-4 video.bg-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .item-13 .social-icons {
+    bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .social-icon-box {
+    padding: 12px;
+  }
+
+  .Terms {
+    position: static;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .item-5,
+  .item-13 {
+    grid-column: span 2; /* Full width for big items */
+  }
+
+  .grid-item:hover {
+    transform: scale(0.98);
+  }
+}

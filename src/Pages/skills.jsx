@@ -43,9 +43,28 @@ export default function Skills() {
       }
     };
 
-    // 🐢 Slower Matrix: was 33ms, now 80ms
     const interval = setInterval(draw, 80);
     return () => clearInterval(interval);
+  }, []);
+
+  // Add global glowing animation for section headings
+  useEffect(() => {
+    const styleTag = document.createElement("style");
+    styleTag.innerHTML = `
+      a:hover {
+        transform: scale(1.08) !important;
+        box-shadow: 0 6px 15px rgba(0,255,100,0.3) !important;
+      }
+      h2 {
+        animation: glow 2s infinite;
+      }
+      @keyframes glow {
+        0% { text-shadow: 0 0 5px #00ffcc; }
+        50% { text-shadow: 0 0 20px #00ffcc; }
+        100% { text-shadow: 0 0 5px #00ffcc; }
+      }
+    `;
+    document.head.appendChild(styleTag);
   }, []);
 
   const techStack = {
@@ -92,13 +111,13 @@ export default function Skills() {
             <span style={styles.maximize} />
           </div>
 
-          <h1 style={styles.heading}>🚀 My Tech Stack</h1>
+          <h1 style={styles.heading}>🚀 Tech Stack</h1>
 
-          {Object.entries(techStack).map(([section, skills]) => (
+          {Object.entries(techStack).map(([section, Skills]) => (
             <div key={section}>
               <h2 style={styles.section}>{section}</h2>
               <div style={styles.grid}>
-                {skills.map((s, i) => (
+                {Skills.map((s, i) => (
                   <a
                     key={i}
                     href={s.link}
@@ -169,12 +188,20 @@ const styles = {
   heading: {
     fontSize: "2.5rem",
     marginBottom: "20px",
+    textAlign: "center",
+    textTransform: "uppercase",
+    letterSpacing: "2px",
   },
   section: {
     fontSize: "1.5rem",
-    margin: "30px 0 10px",
-    borderBottom: "1px solid rgba(255,255,255,0.2)",
-    paddingBottom: "5px",
+    margin: "30px 0 20px",
+    borderBottom: "1px dotted rgba(255,255,255,0.3)",
+    paddingBottom: "10px",
+    textAlign: "center",
+    letterSpacing: "2px",
+    fontFamily: "'Courier New', Courier, monospace",
+    textTransform: "uppercase",
+    color: "#8ecaff",
   },
   grid: {
     display: "grid",
@@ -200,13 +227,3 @@ const styles = {
     textDecoration: "none",
   },
 };
-
-// 👇 Add hover effects globally (or move to App.css)
-const styleTag = document.createElement("style");
-styleTag.innerHTML = `
-  a:hover {
-    transform: scale(1.08) !important;
-    box-shadow: 0 6px 15px rgba(0,255,100,0.3) !important;
-  }
-`;
-document.head.appendChild(styleTag);

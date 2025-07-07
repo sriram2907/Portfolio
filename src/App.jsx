@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import BoredSuggestion from "./Components/Api";
 import Checkbox from "./Components/Light";
-import skills from "./Pages/skills";
+import Skills from "./Pages/Skills";
 
 export default function App() {
   return (

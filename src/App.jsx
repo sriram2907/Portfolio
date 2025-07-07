@@ -78,7 +78,7 @@ export default function App() {
                   </a>
 
                   {/* 🔗 Link to Skills Page */}
-                  <Link to="/skills" className="grid-item item-10"></Link>
+                  <Link to="/Skills" className="grid-item item-10"></Link>
 
                   <div className="grid-item item-11"></div>
 
@@ -157,7 +157,7 @@ export default function App() {
         />
 
         {/* 📄 Skills Page Route */}
-        <Route path="/skills" element={<Skills />} />
+        <Route path="/Skills" element={<Skills />} />
       </Routes>
     </Router>
   );

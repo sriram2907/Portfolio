@@ -5,22 +5,22 @@ const projects = [
   {
     name: "portfolio-site",
     description: "React-based personal portfolio with animated sections.",
-    url: "#",
+    url: "https://codedbyram.vercel.app/",
   },
   {
     name: "food-price-compare",
-    description: "Compares prices across Blinkit, Swiggy & Zomato.",
-    url: "#",
-  },
-  {
-    name: "spotify-clone",
-    description: "Live Spotify UI clone using official API.",
+  description: "Compares prices across Blinkit, Swiggy & Zomato. (UNDER DEVELOPMENT)",
     url: "#",
   },
   {
     name: "watch-party",
     description: "WebRTC based movie room with sync and webcam.",
-    url: "#",
+    url: "https://webcast-nu.vercel.app/",
+  },
+  {
+    name: "Apple Style calculator",
+    description: "minimal aple styled simple scientific calculator.",
+    url: "https://ical-the-calculator.vercel.app/",
   },
 ];
 
@@ -138,7 +138,7 @@ const Projects = () => {
 
           {/* Download CV */}
           <a
-            href="https://drive.google.com/file/d/101FbOMBmdiluRcIK2BcfMsg7f34IGpMM/view?usp=sharing" // Make sure this file is in the public folder
+            href="https://drive.google.com/file/d/1alJxy290lnHMrKzCypT_P3w8bvXh56Mm/view?usp=sharing" // Make sure this file is in the public folder
             download="Sriram_CV.pdf"
             style={{
               backgroundColor: "#00FF9D22",

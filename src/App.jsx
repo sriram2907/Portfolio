@@ -55,7 +55,7 @@ function App() {
   const typingSpeed = 20;
   const navigate = useNavigate();
 
-  const fullText = `👨‍💻 About Me
+  const fullText = `  About Me
 I'm a Full Stack Developer currently in my 7th semester of B.Tech in Information Technology at KCG College of Technology. I specialize in:
 
 Frontend: HTML, CSS, JavaScript, React
@@ -220,7 +220,7 @@ I speak English and Tamil fluently and am currently learning Japanese.`;
       )}
       <footer className="footer-bar">
         <Button onClick={() => navigate('/Projects')}>View Projects</Button>
-        <Button as="a" href="https://drive.google.com/file/d/101FbOMBmdiluRcIK2BcfMsg7f34IGpMM/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 16 }}>Download CV</Button>
+        <Button as="a" href="https://drive.google.com/file/d/1alJxy290lnHMrKzCypT_P3w8bvXh56Mm/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 16 }}>Download CV</Button>
       </footer>
     </div>
   );

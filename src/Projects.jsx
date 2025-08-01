@@ -1,148 +1,185 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Ensure you're using React Router
 
-const socialLinks = [
-  { icon: "🌐", url: "#" }, // Website
-  { icon: "🐦", url: "#" }, // Twitter
-  { icon: "💼", url: "#" }, // LinkedIn
-  { icon: "📸", url: "#" }, // Instagram
+const projects = [
+  {
+    name: "portfolio-site",
+    description: "React-based personal portfolio with animated sections.",
+    url: "#",
+  },
+  {
+    name: "food-price-compare",
+    description: "Compares prices across Blinkit, Swiggy & Zomato.",
+    url: "#",
+  },
+  {
+    name: "spotify-clone",
+    description: "Live Spotify UI clone using official API.",
+    url: "#",
+  },
+  {
+    name: "watch-party",
+    description: "WebRTC based movie room with sync and webcam.",
+    url: "#",
+  },
 ];
 
 const Projects = () => {
   return (
     <div
       style={{
+        backgroundColor: "#0d0d0d",
+        color: "#00FF9D",
         minHeight: "100vh",
-        width: "100vw",
-        background: "radial-gradient(ellipse at 50% 40%, #23242a 60%, #18181c 100%)",
+        fontFamily: "'Fira Code', monospace",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        fontFamily: 'Inter, Arial, sans-serif',
-        color: "#fff",
-        position: "relative",
+        padding: "40px 20px",
       }}
     >
-      {/* Top left minimal icon/text */}
-      <div style={{
-        position: "absolute",
-        top: 32,
-        left: 48,
-        fontSize: 16,
-        color: "#b0b0b0",
-        opacity: 0.7,
-        letterSpacing: 2,
-      }}>
-        //SRIX*LAB
-      </div>
-      {/* Top right minimal icon */}
-      <div style={{
-        position: "absolute",
-        top: 32,
-        right: 48,
-        fontSize: 24,
-        color: "#b0b0b0",
-        opacity: 0.7,
-      }}>
-        ●●●
-      </div>
-      {/* Centered card */}
       <div
         style={{
-          position: "relative",
-          width: 380,
-          maxWidth: "90vw",
-          minHeight: 520,
-          background: "rgba(30,30,34,0.85)",
-          borderRadius: 28,
-          border: "2px solid #fff2",
-          boxShadow: "0 8px 48px #000a, 0 1.5px 8px #00ff9d22",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "48px 32px 32px 32px",
-          backdropFilter: "blur(8px)",
+          backgroundColor: "#111",
+          border: "1px solid #00FF9D33",
+          borderRadius: "12px",
+          width: "100%",
+          maxWidth: "800px",
+          padding: "32px",
+          boxShadow: "0 0 20px #00FF9D11",
         }}
       >
-        {/* Top row: green dot and password dots */}
-        <div style={{
-          display: "flex",
-          alignItems: "center",
-          width: "100%",
-          justifyContent: "space-between",
-          marginBottom: 24,
-        }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            <span style={{ width: 18, height: 18, background: "#00ff9d", borderRadius: "50%", display: "inline-block" }} />
-            <span style={{ color: "#fff", fontSize: 18, letterSpacing: 4 }}>*******</span>
-          </div>
-          <span style={{ color: "#fff", fontSize: 24, opacity: 0.7 }}>...</span>
-        </div>
-        {/* Centered image */}
-        <img
-          src="/me2.jpg"
-          alt="Your portrait"
+        {/* Terminal header */}
+        <div
           style={{
-            width: 180,
-            height: 180,
-            objectFit: "cover",
-            borderRadius: "50%",
-            boxShadow: "0 8px 40px #000a, 0 1.5px 8px #00ff9d33",
-            border: "4px solid #23242a",
-            marginBottom: 32,
+            borderBottom: "1px solid #00FF9D22",
+            paddingBottom: "12px",
+            marginBottom: "24px",
+            display: "flex",
+            justifyContent: "space-between",
+            fontSize: "14px",
+            color: "#00FF9Daa",
           }}
-        />
-        {/* Name/branding and subtitle */}
-        <div style={{
-          fontSize: 38,
-          fontWeight: 800,
-          letterSpacing: 2,
-          marginBottom: 8,
-          textAlign: "center",
-        }}>
-          srix*lab
+        >
+          <span>➜ srixlab@projects</span>
+          <span>terminal — bash</span>
         </div>
-        <div style={{
-          fontSize: 18,
-          color: "#b0b0b0",
-          opacity: 0.9,
-          letterSpacing: 2,
-          marginBottom: 32,
-          textAlign: "center",
-        }}>
-          FULL STACK DEVELOPER
+
+        {/* Fake command */}
+        <div style={{ marginBottom: "20px" }}>
+          <span style={{ color: "#00FF9D" }}>srixlab@dev</span>:~${" "}
+          <span style={{ color: "#fff" }}>ls projects</span>
         </div>
-        {/* Social icons row */}
-        <div style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 24,
-          marginTop: 16,
-        }}>
-          {socialLinks.map((link, i) => (
-            <a
-              key={i}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
+
+        {/* Project list */}
+        {projects.map((project, index) => (
+          <div key={index} style={{ marginBottom: "20px" }}>
+            <div>
+              <span style={{ color: "#00FF9D" }}>➜</span>{" "}
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#00FF9D",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                }}
+              >
+                {project.name}
+              </a>
+            </div>
+            <div
               style={{
-                color: "#fff",
-                fontSize: 26,
-                opacity: 0.8,
-                textDecoration: "none",
-                transition: "opacity 0.2s",
+                marginLeft: "28px",
+                color: "#aaa",
+                fontSize: "14px",
               }}
-              onMouseOver={e => (e.currentTarget.style.opacity = 1)}
-              onMouseOut={e => (e.currentTarget.style.opacity = 0.8)}
             >
-              {link.icon}
-            </a>
-          ))}
+              {project.description}
+            </div>
+          </div>
+        ))}
+
+        {/* Blinking cursor */}
+        <div style={{ marginTop: "32px", fontSize: "16px" }}>
+          <span style={{ color: "#00FF9D" }}>srixlab@dev</span>:~${" "}
+          <span className="blinking-cursor">|</span>
+        </div>
+
+        {/* Action buttons */}
+        <div
+          style={{
+            marginTop: "40px",
+            display: "flex",
+            justifyContent: "flex-start",
+            gap: "16px",
+            flexWrap: "wrap",
+          }}
+        >
+          {/* Back to Home (React Router) */}
+          <Link
+            to="/"
+            style={{
+              backgroundColor: "#00FF9D22",
+              color: "#00FF9D",
+              border: "1px solid #00FF9D44",
+              borderRadius: "6px",
+              padding: "10px 20px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              transition: "background 0.2s ease",
+            }}
+            onMouseOver={e => (e.currentTarget.style.backgroundColor = "#00FF9D33")}
+            onMouseOut={e => (e.currentTarget.style.backgroundColor = "#00FF9D22")}
+          >
+            ← Back to Home
+          </Link>
+
+          {/* Download CV */}
+          <a
+            href="https://drive.google.com/file/d/101FbOMBmdiluRcIK2BcfMsg7f34IGpMM/view?usp=sharing" // Make sure this file is in the public folder
+            download="Sriram_CV.pdf"
+            style={{
+              backgroundColor: "#00FF9D22",
+              color: "#00FF9D",
+              border: "1px solid #00FF9D44",
+              borderRadius: "6px",
+              padding: "10px 20px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              transition: "background 0.2s ease",
+            }}
+            onMouseOver={e => (e.currentTarget.style.backgroundColor = "#00FF9D33")}
+            onMouseOut={e => (e.currentTarget.style.backgroundColor = "#00FF9D22")}
+          >
+            ⬇ Download CV
+          </a>
         </div>
       </div>
+
+      {/* Blinking cursor CSS */}
+      <style>
+        {`
+          .blinking-cursor {
+            display: inline-block;
+            width: 8px;
+            height: 20px;
+            background-color: #00FF9D;
+            animation: blink 1s steps(2, start) infinite;
+            vertical-align: middle;
+            margin-left: 4px;
+          }
+
+          @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+          }
+        `}
+      </style>
     </div>
   );
 };
 
-export default Projects; 
+export default Projects;

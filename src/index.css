@@ -4,10 +4,19 @@ html, body {
   padding: 0;
   overflow: hidden;
   font-family: 'SF Mono', 'Consolas', monospace;
-  background: radial-gradient(circle at center, #0f0f0f, #000000);
-  color: #00ff9d;
   height: 100vh;
   width: 100vw;
+  background: linear-gradient(-45deg, #001f1f, #000c0c, #000000, #001f1f);
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
+  color: #00ff9d;
+}
+
+/* ---------- 3D Gradient Animation ---------- */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* ---------- App Layout ---------- */
@@ -35,9 +44,9 @@ html, body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
-  /* Remove overflow hidden to allow dynamic scaling */
 }
 
+/* ---------- Terminal Header ---------- */
 .terminal-header {
   display: flex;
   gap: 8px;
@@ -56,18 +65,35 @@ html, body {
 .yellow { background: #ffbd2e; }
 .green { background: #27c93f; }
 
+/* ---------- Terminal Body ---------- */
 .terminal-body {
   padding: 30px;
   flex: 1 1 auto;
-  overflow: visible;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 60vh; /* cap the height */
   color: #0cff55;
   text-align: left;
-  /* Hide scrollbars if any */
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #00ff9d #18181c;
 }
 .terminal-body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  width: 6px;
 }
+.terminal-body::-webkit-scrollbar-thumb {
+  background-color: #00ff9d;
+  border-radius: 6px;
+}
+
+.terminal-subheading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ff0000; /* glowing cyan color */
+  text-shadow: 0 0 4px #12fff799;
+}
+
 
 .prompt {
   font-size: 1.1rem;
@@ -108,25 +134,7 @@ html, body {
   position: fixed;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
-  padding: 18px 0 12px 0;
-  z-index: 100;
-  box-shadow: 0 -2px 16px #00ff9d22;
+  padding: 30px;
 }
 
-.footer-btn {
-  padding: 12px 32px;
-  font-size: 1.1rem;
-  background: #00ff9d;
-  color: #0f0f0f;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  box-shadow: 0 2px 12px #00ff9d44;
-  transition: background 0.2s;
-}
 
-.footer-btn:hover {
-  background: #0cff55;
-}

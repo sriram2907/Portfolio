@@ -181,7 +181,7 @@ const Showcase = () => {
       <div
         style={{
           display: "flex",
-          flexDirection: "row",
+          flexDirectsion: "row",
           gap: 48,
           width: "100%",
           maxWidth: 1200,

@@ -7,7 +7,7 @@ import Button from './components/Button';
 const socialLinks = [
   {
     label: "LinkedIn",
-    url: "https://linkedin.com/in/srixxam",
+    url: "www.linkedin.com/in/sriram-v-92389425b",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="32" height="32" rx="6" fill="#18181c"/>
@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     label: "Twitter",
-    url: "https://twitter.com/srixxam",
+    url: "https://twitter.com/ItzSrii",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="32" height="32" rx="6" fill="#18181c"/>
@@ -27,7 +27,7 @@ const socialLinks = [
   },
   {
     label: "GitHub",
-    url: "https://github.com/srixxam",
+    url: "https://github.com/sriram2907",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="32" height="32" rx="6" fill="#18181c"/>
@@ -55,11 +55,52 @@ function App() {
   const typingSpeed = 20;
   const navigate = useNavigate();
 
-  const fullText = `I'm a Full Stack Developer currently pursuing my B.Tech in Information Technology at KCG College of Technology, in my 7th semester. I specialize in HTML, CSS, JavaScript, React, Node.js, MongoDB, and Git, and I actively take up freelance projects. My recent work includes building this personal portfolio and developing WebCast, a real-time movie-watching platform where users can host rooms and watch films together with face cam sync using WebRTC.
+  const fullText = `👨‍💻 About Me
+I'm a Full Stack Developer currently in my 7th semester of B.Tech in Information Technology at KCG College of Technology. I specialize in:
 
-I aim to become a full-time full stack developer in the next 5 months. My focus is on contributing to real-world products, mastering backend technologies and cloud deployment, and landing a remote developer job or internship.
+Frontend: HTML, CSS, JavaScript, React
 
-Outside of coding, I have a deep interest in cinematography, gaming on my PS5, and riding bikes. I love building aesthetic, Apple-inspired UIs and enjoy experimenting with clean, minimal layouts. I speak English and Tamil fluently and am currently learning Japanese.`;
+Backend: Node.js, MongoDB
+
+Tools: Git, GitHub, VS Code
+
+I actively work on freelance projects and recently built:
+
+This personal portfolio
+
+WebCast – a real-time movie-watching platform where users can host rooms and watch films together with synced face cams using WebRTC
+
+Food Price Compare – a web app that compares food prices across Blinkit, Swiggy, and Zomato
+
+and more!
+
+🌐 Current Focus
+I'm currently focused on enhancing my backend skills and learning cloud deployment. I aim to become a full-time Full Stack Developer and contribute to real-world products.
+
+🎯 Goals
+Over the next 5 months, I aim to:
+
+Become a full-time Full Stack Developer
+
+Master backend technologies and cloud deployment
+
+Land a remote job or internship
+
+Contribute to real-world product development
+
+🧠 Personal Interests
+When I’m not coding, I enjoy:
+
+Cinematography
+
+Gaming on my PS5
+
+Riding bikes
+
+Designing Apple-inspired UI/UX and experimenting with clean, minimal layouts
+
+I speak English and Tamil fluently and am currently learning Japanese.`;
+
 
   useEffect(() => {
     let i = 0;
@@ -71,6 +112,7 @@ Outside of coding, I have a deep interest in cinematography, gaming on my PS5, a
     return () => clearInterval(typing);
   }, []);
 
+  
   return (
     <div className="app-layout">
       <div className="terminal-window">
@@ -177,7 +219,7 @@ Outside of coding, I have a deep interest in cinematography, gaming on my PS5, a
         </div>
       )}
       <footer className="footer-bar">
-        <Button onClick={() => navigate('/showcase')}>View Projects</Button>
+        <Button onClick={() => navigate('/Projects')}>View Projects</Button>
         <Button as="a" href="https://drive.google.com/file/d/101FbOMBmdiluRcIK2BcfMsg7f34IGpMM/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 16 }}>Download CV</Button>
       </footer>
     </div>

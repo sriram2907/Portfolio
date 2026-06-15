@@ -1,0 +1,44 @@
+/* ---------- Design tokens ---------- */
+:root {
+  --bg-black: #05070b;
+  --bg-navy: #0a1018;
+  --bg-navy-light: #101a28;
+  --red: #c0392b;
+  --red-dark: #7a1f17;
+  --blue: #2e6fd9;
+  --blue-glow: #3b82f6;
+  --text-main: #eef1f5;
+  --text-mute: #8b97ab;
+  --text-faint: #5a6577;
+  --line: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-black);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+/* ---------- Footer (legacy, kept minimal) ---------- */
+.footer-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}

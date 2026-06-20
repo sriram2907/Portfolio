@@ -84,7 +84,7 @@ export default function Contact() {
               <GithubIcon /> GitHub
             </a>
             <a
-              href={"www.linkedin.com/in/sriramv27"}
+              href={"https://www.linkedin.com/in/sriramv27/"}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"

@@ -76,7 +76,7 @@ export default function Contact() {
 
           <div className="mt-8 pt-8 border-t border-border flex flex-wrap gap-5">
             <a
-              href={profile.links.github}
+              href={"https://github.com/sriram2907"}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"
@@ -84,7 +84,7 @@ export default function Contact() {
               <GithubIcon /> GitHub
             </a>
             <a
-              href={profile.links.linkedin}
+              href={"www.linkedin.com/in/sriramv27"}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"
@@ -92,7 +92,7 @@ export default function Contact() {
               <LinkedinIcon /> LinkedIn
             </a>
             <a
-              href={profile.links.leetcode}
+              href={"https://leetcode.com/u/ram2704/"}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"

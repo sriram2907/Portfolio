@@ -61,10 +61,13 @@ function ProcessCard({ project, index }) {
                 {project.description}
               </p>
               <ul className="space-y-2 mb-5">
-                {project.points.map((p) => (
-                  <li key={p} className="text-sm text-muted flex gap-3 leading-relaxed">
-                    <span className="text-scan font-mono shrink-0">›</span>
-                    {p}
+                {project.points.map((point) => (
+                  <li
+                    key={point}
+                    className="text-sm text-muted flex gap-3 leading-relaxed"
+                  >
+                    <span className="text-scan font-mono shrink-0">&rsaquo;</span>
+                    {point}
                   </li>
                 ))}
               </ul>
@@ -78,16 +81,14 @@ function ProcessCard({ project, index }) {
                   </span>
                 ))}
               </div>
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 font-mono text-xs text-scan hover:underline"
-                >
-                  view live <ArrowUpRight size={13} />
-                </a>
-              )}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-2 border border-scan/50 text-scan hover:bg-scan hover:text-bg transition-colors"
+              >
+                view live <ArrowUpRight size={13} />
+              </a>
             </div>
           </motion.div>
         )}
@@ -108,7 +109,6 @@ export default function Projects() {
             {projects.length} active
           </span>
         </div>
-
         <div className="space-y-3">
           {projects.map((p, i) => (
             <ProcessCard key={p.id} project={p} index={i} />

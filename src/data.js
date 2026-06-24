@@ -4,14 +4,13 @@ export const profile = {
   focus: "Computer Vision · Civic Tech · Agentic Systems",
   location: "Chennai, Tamil Nadu, India",
   email: "sriramv1227@gmail.com",
-  phone: "+91 8015151191",
+  resume: "/resume.pdf", // ← drop your PDF as public/resume.pdf
   links: {
-    linkedin: "https://linkedin.com/in/your-handle",
-    github: "https://github.com/your-handle",
-    leetcode: "https://leetcode.com/your-handle",
+    linkedin: "https://linkedin.com/in/your-handle", // ← replace
+    github: "https://github.com/your-handle",        // ← replace
+    leetcode: "https://leetcode.com/your-handle",    // ← replace
   },
-  bio:
-    "Final-year IT student who builds systems that watch, track, and respond — from a real-time passenger-safety detector deployed on railway footboards to an autonomous agent that chains its own tools. I like software that does something the moment you look away.",
+  bio: "Final-year IT student who builds systems that watch, track, and respond — from a real-time passenger-safety detector deployed on railway footboards to an autonomous agent that chains its own tools. I like software that does something the moment you look away.",
 };
 
 export const education = {
@@ -51,7 +50,7 @@ export const projects = [
       "Recharts dashboards visualizing promise fulfillment trends and category breakdowns.",
       "Apple/Linear-inspired design system built on a glassmorphism component layer.",
     ],
-    link: "",
+    link: "https://your-vaakuwatch-url.vercel.app", // ← replace
   },
   {
     id: "agentic-ai",
@@ -67,7 +66,7 @@ export const projects = [
       "Modular FastAPI endpoints with Pydantic models for time, weather, and calculation utilities.",
       "Responsive React + Vite frontend talking to the backend over CORS-configured async requests.",
     ],
-    link: "",
+    link: "https://your-agentic-ai-url.vercel.app", // ← replace
   },
   {
     id: "webcast",
@@ -83,7 +82,7 @@ export const projects = [
       "Socket.io rooms for synchronized playback control and real-time chat.",
       "Backend architected with Node.js/Express to support 100+ concurrent users.",
     ],
-    link: "",
+    link: "https://your-webcast-url.vercel.app", // ← replace
   },
 ];
 

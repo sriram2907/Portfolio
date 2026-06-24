@@ -53,8 +53,8 @@ export default function Contact() {
             Building something worth detecting?
           </h3>
           <p className="text-muted mt-4 max-w-lg leading-relaxed">
-            Open to internships, freelance builds, and collaborations across computer vision,
-            civic-tech, and full-stack products.
+            Open to internships, freelance builds, and collaborations across computer
+            vision, civic-tech, and full-stack products.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -66,17 +66,11 @@ export default function Contact() {
               {copied ? "copied" : profile.email}
               {!copied && <Copy size={12} className="opacity-60" />}
             </button>
-            <a
-              href={`tel:${profile.phone.replace(/\s/g, "")}`}
-              className="px-4 py-2.5 border border-border text-ink font-mono text-xs hover:border-scan/60 transition-colors"
-            >
-              {profile.phone}
-            </a>
           </div>
 
           <div className="mt-8 pt-8 border-t border-border flex flex-wrap gap-5">
             <a
-              href={"https://github.com/sriram2907"}
+              href={profile.links.github}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"
@@ -84,7 +78,7 @@ export default function Contact() {
               <GithubIcon /> GitHub
             </a>
             <a
-              href={"https://www.linkedin.com/in/sriramv27/"}
+              href={profile.links.linkedin}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"
@@ -92,7 +86,7 @@ export default function Contact() {
               <LinkedinIcon /> LinkedIn
             </a>
             <a
-              href={"https://leetcode.com/u/ram2704/"}
+              href={profile.links.leetcode}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"

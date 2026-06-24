@@ -50,7 +50,7 @@ export const projects = [
       "Recharts dashboards visualizing promise fulfillment trends and category breakdowns.",
       "Apple/Linear-inspired design system built on a glassmorphism component layer.",
     ],
-    link: "https://your-vaakuwatch-url.vercel.app", // ← replace
+    link: "https://vaakuwatch.vercel.app/", // ← replace
   },
   {
     id: "agentic-ai",
@@ -66,7 +66,7 @@ export const projects = [
       "Modular FastAPI endpoints with Pydantic models for time, weather, and calculation utilities.",
       "Responsive React + Vite frontend talking to the backend over CORS-configured async requests.",
     ],
-    link: "https://your-agentic-ai-url.vercel.app", // ← replace
+    link: "https://angentic-ai-system.vercel.app/", // ← replace
   },
   {
     id: "webcast",
@@ -82,7 +82,7 @@ export const projects = [
       "Socket.io rooms for synchronized playback control and real-time chat.",
       "Backend architected with Node.js/Express to support 100+ concurrent users.",
     ],
-    link: "https://your-webcast-url.vercel.app", // ← replace
+    link: "https://webcast-nu.vercel.app/", // ← replace
   },
 ];
 
